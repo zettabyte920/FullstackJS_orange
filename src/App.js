@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Fullstack from './components/fullstack';
+import { Accueil } from './components/accueil';
+import Presentation from './components/presentation';
 
 function App() {
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          <Fullstack />
-        </header>
-      </div>
+      <Accueil />
+      <Presentation />
     </>
   );
 }

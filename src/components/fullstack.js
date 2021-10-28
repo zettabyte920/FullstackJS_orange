@@ -1,11 +1,18 @@
-export default function Fullstack() {
-
-    return (
-        <div>
-            <h1>Bonjour!</h1>
-            <h2>Aujourd'hui : {new Date().toLocaleDateString()}.</h2>
-            <h2>il est : {new Date().toLocaleTimeString()}.</h2>
-        </div>
-    )
-
+import React from "react"
+class Demo extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: "test"
+        }
+    }
+    render() {
+        return (
+            <>
+                {this.state.text}
+            </>
+        );
+    }
 }
+
+export default Demo;
