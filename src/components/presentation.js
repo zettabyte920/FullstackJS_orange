@@ -16,14 +16,12 @@ class Presentation extends React.Component {
                     { "id": "222", "name": "reseau" }
                 ]
             }
-
-
         }
     }
+
     render() {
         return (
             <>
-
                 <table>
                     <thead><h1>{this.state.titre}</h1></thead>
                     <tbody>
