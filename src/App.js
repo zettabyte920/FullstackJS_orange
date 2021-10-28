@@ -10,6 +10,7 @@ function App() {
     <>
       <Accueil />
       <Presentation />
+      <Ex1 />
     </>
   );
 }

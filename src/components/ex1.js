@@ -7,10 +7,10 @@ class Ex1 extends React.Component {
         }
     }
     increment = () => {
-        this.state.count = this.state.count + 1
+        this.setState({ count: this.state.count + 1 })
     }
     decrement = () => {
-        this.state.count = this.state.count - 1
+        this.setState({ count: this.state.count - 1 })
     }
     render() {
         return (
