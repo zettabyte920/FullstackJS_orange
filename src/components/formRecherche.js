@@ -11,7 +11,7 @@ class FormRecherche extends Component {
                     <thead>
                         <tr style={{ fontSize: '30px' }}>
                             <td>
-                                <b>Images cherche:</b>
+                                <b>Images search:</b>
                             </td>
                         </tr>
                     </thead>
