@@ -30,7 +30,7 @@ class Presentation extends React.Component {
         //delete selected department
         this.setState({
             departs: {
-                list: this.state.departs.list.filter((a) => { return a.id != i })
+                list: this.state.departs.list.filter((a) => { return a.id !== i })
             }
         })
 
