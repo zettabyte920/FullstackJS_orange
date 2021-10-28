@@ -16,15 +16,6 @@ class Accueil extends React.Component {
     }
 }
 
-function Accueil2() {
-    const [accueil, setAccueil] = useState("Bienvenue a notre site de la societe: Ma societe")
-    return (
-        <>
-            <h1>{accueil}</h1>
-        </>
-    );
-}
 
-export {
-    Accueil
-};
+
+export default Accueil
