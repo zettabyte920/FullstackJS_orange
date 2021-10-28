@@ -14,11 +14,17 @@ class Propos extends Component {
     render() {
         return (
             <table>
-                <thead><h1>{this.state.titre}</h1></thead>
+                <thead>
+                    <tr style={{ fontSize: '30px' }}>
+                        <td>
+                            <b>{this.state.titre}</b>
+                        </td>
+                    </tr>
+                </thead >
                 <tbody>
                     <tr>
                         <td rowSpan={2} colSpan={2}>
-                            <img width="100px" src={this.state.contact.logo}></img>
+                            <img width="100px" src={this.state.contact.logo} alt="company logo"></img>
                         </td>
                         <td>
                             <ul>
@@ -28,7 +34,7 @@ class Propos extends Component {
                         </td>
                     </tr>
                 </tbody>
-            </table>
+            </table >
         );
     }
 }
