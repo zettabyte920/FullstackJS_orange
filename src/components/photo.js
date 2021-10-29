@@ -20,7 +20,11 @@ class Photos extends Component {
 
 
     handelSearch = (index) => {
-        axios.get(`https://pixabay.com/api/?key=16038116-1601cf38aef095472d2f0b59f&q=${this.state.search}&per_page=5&page=${index || 1}`).then((res) => this.setState({ photos: res.data.hits, totalHits: parseInt(res.data.totalHits / 5) }))
+        if (this.state.page === index) {
+            alert(`vous avez deja en la page N°${index}`)
+            return;
+        }
+        axios.get(`https://pixabay.com/api/?key=16038116-1601cf38aef095472d2f0b59f&q=${this.state.search}&per_page=5&page=${index || 1}`).then((res) => this.setState({ photos: res.data.hits, page: index, totalHits: parseInt(res.data.totalHits / 5) }))
     }
     setMotCle = (e) => {
         this.setState({ search: e.target.value })
