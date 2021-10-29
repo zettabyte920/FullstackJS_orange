@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import Photos from './components/photo';
+import Hitdeatils from './components/hitdetails';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/photos">
             <Photos />
           </Route>
+          <Route exact path="/details/:id" component={Hitdeatils} />
           <Route path="/">
             <Accueil />
           </Route>
