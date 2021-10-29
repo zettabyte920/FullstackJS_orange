@@ -1,9 +1,5 @@
 import { Component } from "react"
 class DepDetails extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
     render() {
         return (
             <tr>
