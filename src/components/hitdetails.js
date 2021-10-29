@@ -7,7 +7,7 @@ export default function Hitdeatils() {
     const { id } = useParams();
     useEffect(() => {
         axios.get(`https://pixabay.com/api/?key=16038116-1601cf38aef095472d2f0b59f&id=${id}`).then((res) => setImage(res.data.hits[0]))
-    }, []);
+    }, [id]);
     return (
         <div>
             <h1>{image.tags} | {image.webformatWidth}X{image.webformatHeight}</h1>

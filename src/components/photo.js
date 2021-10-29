@@ -4,11 +4,8 @@ import FormRecherche from "./formRecherche";
 import Navigation from "./navigation";
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
-import Hitdeatils from "./hitdetails";
 
 class Photos extends Component {
     constructor(props) {
@@ -37,7 +34,6 @@ class Photos extends Component {
                         <div style={{ padding: '2px' }} key={i}>
                             <h3>{`${img.tags} | ${img.webformatWidth}X${img.webformatHeight}`}</h3>
                             <img width="400px" src={img.webformatURL} alt={img.tags}></img><br />
-                            <a href="#"></a>
                             <Router>
                                 <Link to={`/details/${img.id}`} target="_blank">Hit details</Link>
                             </Router>
